@@ -1,0 +1,102 @@
+<html>
+	<head>
+	<title>Kkraftserie</title>
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link rel="icon" href="img/imgHeader/favicon_ks.ico">
+</head>
+
+<body>
+
+	<div>
+		<div class="topnav" id="myTopnav">
+			<a href="https://www.kkraftserie.carrd.co" class="active"><img  style = "width: 15px;" src="img/imgHeader/headerImg.png"> Kkraftserie PH</a>
+			<a href="#home">Home</a>
+			<a href="#product-grid">Product</a>
+			<a href="#shopping-cart" id="cartuu"> <img src="img/imgHeader/favicon_ks.ico" id="cart-icon"> Cart</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			  <img style = "width: 20px;" src="img/imgHeader/mneu.jpg">
+			</a>
+		  </div>
+	</div>
+	
+	<div>
+		<div class="carousel">
+			<div class="viewport">
+				<div class="slide-container">
+				  <div class="slide-3">
+				  </div>
+				</div>
+				<div class="slide-container">
+				  <div class="slide-2">
+				  </div>
+				</div>
+				<div class="slide-container">
+				  <div class="slide-1">
+				  </div>
+				</div>
+			</div>
+		  </div>
+
+	</div>
+
+		
+	<div class="shoppingLayout">
+		
+	<div class="container">
+		<!--  Shopping cart table wrapper  -->
+		<div id="shopping-cart">
+			<div class="txt-heading">
+				<br><hr><br><br><br>
+				<h1><img src="img/imgHeader/favicon_ks.ico" width="20px"> Shopping cart <a href="#myTopnav" style="color: #2B3467; text-decoration: none; float: right;"> Back to Home <img style = "width: 20px;" src="img/imgHeader/home.png"></a> </h1>
+				
+			</div>
+			<a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+			<table class="tbl-cart" cellpadding="10" cellspacing="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th class='text-right' width="10%">Unit Price</th>
+						<th class='text-right' width="5%">Quantity</th>
+						<th class='text-right' width="10%">Sub Total</th>
+					</tr>
+				</thead>
+				<!--  Cart table to load data on "add to cart" action -->
+				<tbody id="cartTableBody">
+				</tbody>
+				<tfoot>
+					<tr>
+						<td class="text-right">Total:</td>
+						<td id="itemCount" class="text-right" colspan="2"></td>
+						<td id="totalAmount" class="text-right"></td>
+					</tr>
+				</tfoot>
+			</table>
+
+			<br><br><br><br><br><br><hr><br><br>
+		</div>
+	</div>
+
+	</div>
+	<div>
+		<!-- Product gallery shell to load HTML from JavaScript code -->
+		<div id="product-grid">
+			<div class="txt-heading">
+				<h1><img src="img/imgHeader/favicon_ks.ico" width="20px"> Products <a href="#myTopnav" style="color: #2B3467; text-decoration: none; float: right;"> Back to Home <img style = "width: 20px;" src="img/imgHeader/home.png"></a></h1>
+			</div>
+			<div id="product-item-container" ></div>
+
+		</div>
+	</div>
+
+	<div class="footer">
+		<p>Kkraftserie PH Official Website</p>
+	  </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="cart.js"></script>
+
+
+	
+</body>
+</html>
